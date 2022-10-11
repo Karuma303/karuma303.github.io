@@ -295,6 +295,10 @@ footer > * {
         background-color: white;
     }
 
+    .bg {
+        display: none;
+    }
+
     nav img:not([class="active"]) {
         display: none;
     }
