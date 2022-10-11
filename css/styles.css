@@ -1,0 +1,93 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');*/
+/* lato-regular - latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+    url('../assets/fonts/lato-v23-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* lato-700 - latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+    url('../assets/fonts/lato-v23-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+:root {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+
+    /* defaults for scrollbar */
+    --scrollbar-background-color: transparent;
+    --scrollbar-width: 8px;
+    --scrollbar-track-color: #f2f2f2;
+    --scrollbar-track-border: 1px solid #d3d3d3;
+    --scrollbar-track-border-radius: 5px;
+    --scrollbar-thumb-color: #b8b8b8;
+    --scrollbar-thumb-color-hover: #b8b8b8;
+    --scrollbar-thumb-border: 1px solid #aaaaaa;
+    --scrollbar-thumb-border-hover: 1px solid #888888;
+    --scrollbar-thumb-border-radius: 5px;
+
+    --color-light-dimmed: #999999;
+}
+
+::-webkit-scrollbar {
+    background-color: var(--scrollbar-background-color);
+    width: var(--scrollbar-width);
+    margin: var(--scrollbar-width);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb-color);
+    border: var(--scrollbar-thumb-border);
+    border-radius: var(--scrollbar-thumb-border-radius);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-thumb-color-hover);
+    border: var(--scrollbar-thumb-border-hover);
+}
+
+::-webkit-scrollbar-track {
+    background: var(--scrollbar-track-color);
+    border: var(--scrollbar-track-border);
+    border-radius: var(--scrollbar-track-border-radius);
+}
+
+body {
+    margin: 0;
+}
+
+a.button {
+    color: white;
+    background: #5E8AFC;
+    border: 1px solid #626262;
+    border-radius: 12px;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    padding: 8px 12px;
+    /*gap: 10px;*/
+    /*display: grid;*/
+    /*align-items: center;*/
+    vertical-align: center;
+    transition: background-color 0.3s;
+    text-transform: uppercase;
+    line-height: 1.1rem;
+    font-size: 0.9rem;
+    min-height: 20px;
+}
+
+a.button:hover {
+    background: #3055c0;
+    text-decoration: none;
+}

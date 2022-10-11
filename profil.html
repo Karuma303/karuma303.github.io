@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profil / Lebenslauf Kai Langenbach</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Profil Kai Langenbach, freiberuflicher Softwareentwickler, Hamburg, Deutschland">
+    <style>
+        body {
+            margin: 0;
+            background-color: #333333;
+            line-height: 1.4;
+            color: black;
+        }
+
+        h1 {
+            font-size: 1.4rem;
+            line-height: 1.2;
+            margin-top: 0;
+        }
+
+        h1 > span {
+            display: block;
+            font-size: 0.9em;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            text-align: center;
+            border-bottom: 2px solid #dddddd;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            font-size: 1.4rem;
+        }
+
+        section {
+            margin-top: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            transition: color ease-out .3s
+        }
+
+        a:hover {
+            color: blue;
+        }
+
+        .outer {
+            display: flex;
+            justify-content: center;
+            font-size: 0.95rem;
+        }
+
+        .content {
+            margin: 20px;
+            padding: 20px;
+            max-width: 800px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            border-radius: 8px;
+            box-shadow: 0 0 0 1px #d5d4d7 inset, 3px 3px 7px -5px #bbb;
+        }
+
+        header {
+            background-color: #cbdccd;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #bbbbbb;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(100, 100, 100, 30%);
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            row-gap: 20px;
+            column-gap: 40px;
+        }
+
+        header img {
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid #444444;
+            aspect-ratio: 1;
+            max-width: 220px;
+            min-width: 220px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 2px 4px rgba(150, 150, 150, 35%);
+        }
+
+        .info-block {
+            flex-grow: 1;
+        }
+
+        .data {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            column-gap: 20px;
+            flex-grow: 1;
+        }
+
+        nav {
+            align-self: flex-end;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        nav img.active {
+            border: 1px solid #bbbbbb;
+            border-radius: 4px;
+        }
+
+        nav img:not([class="active"]):hover {
+            scale: 110%;
+        }
+
+        nav img {
+            display: block;
+            box-sizing: border-box;
+            padding: 4px;
+            width: 32px;
+            border: 1px solid transparent;
+            transition: scale ease-out 0.2s;
+        }
+
+        .customer-list {
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .customer-list li {
+            position: relative;
+        }
+
+        .customer-list > li img {
+            width: 140px;
+            height: 140px;
+            box-sizing: border-box;
+            padding: 10px;
+            aspect-ratio: 1;
+            object-fit: contain;
+            border: 1px solid grey;
+            border-radius: 4px;
+            transition: scale linear 0.2s;
+        }
+
+        .customer-list img:not([alt="tape.tv"]):hover {
+            scale: 105%;
+        }
+
+        .customer-list img:is([alt="tape.tv"]):hover {
+            cursor: not-allowed;
+        }
+
+        .stopper {
+            pointer-events: none;
+            font-size: 0.7rem;
+            padding: 4px 14px 4px 10px;
+            background-color: rgba(255, 255, 255, .2);
+            position: absolute;
+            border-radius: 0 0 20px 0;
+            color: white;
+            z-index: 10;
+        }
+
+        .chip-list {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-left: 0;
+        }
+
+        .chip-list li {
+            background-color: #c2e5c6;
+            padding: 4px 14px;
+            border-radius: 9999px;
+            display: inline-block;
+        }
+
+        footer {
+            margin-top: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        footer > * {
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+<div class="outer">
+    <div class="content">
+        <nav>
+            <img alt="Deutsche Sprache" src="assets/flags/de.svg" class="active">
+            <a href="#"><img alt="English language" src="assets/flags/gb.svg"></a>
+        </nav>
+        <header>
+            <img src="assets/profile.jpg" alt="Profilbild">
+            <div class="info-block">
+                <h1>Kai Langenbach</h1>
+                <p><b>freiberuflicher Softwareentwickler</b><br>Certified Scrum Master (scrum.org)</p>
+                <div class="data">
+                    <span>Geburtsdatum</span><span>03.04.1973</span>
+                    <span>Wohnsitz</span><span>Hamburg / Deutschland</span>
+                    <span>Interessen</span><span>Reisen, Tauchen, Yoga / Meditation</span>
+                    <span>Sprachen</span><span>Deutsch (Muttersprache), Englisch (fliessend)</span>
+                </div>
+            </div>
+        </header>
+        <section>
+            <h2>Schulische Ausbildung</h2>
+            <p>Grundschule Kirchen • Gymnasium Betzdorf • technisches Gymnasium Siegen • Studium technische Informatik
+                Universität / Gesamthochschule Siegen • Freiberuflich seit 2004</p>
+        </section>
+        <section>
+            <h2>Praxiserfahrung</h2>
+            <p>In den inzwischen 22 Jahren meiner freiberuflichen Tätigkeit als Softwareentwickler habe ich eine
+                Vielzahl an Projekten unterschiedlichster Art für eigene Kunden oder im Auftrag bekannter
+                Digital-Agenturen umgesetzt.
+            </p>
+            <p>Meine Tätigkeiten haben dabei das ganze Leistungsspektrum der modernen, agilen Softwareentwicklung
+                abgedeckt - egal ob Planung der Architektur, Umsetzung, Testing oder Deployment. Die hierbei
+                entwickelten Software-Module liefen auf einer großen Anzahl von unterschiedlichen Geräten, auf Servern,
+                auf Smartphones, im Web-Browser, auf POS-Touch-Terminals sowie auf großen Digital Signage
+                Installationen.
+            </p>
+            <p>Der Schwerpunkt meiner Tätigkeiten der letzten Jahre lag vor allem auf der Entwicklung mobiler
+                Anwendungen (Android & cross platform), sowie im Web-Bereich.
+            </p>
+            <p>
+            </p>
+            <p>Ich kann mit gutem Gewissen behaupten, dass mich neue Technologien nicht abschrecken und dass ich
+                selbst beim Erlernen neuer Tools oder Programmiersprachen in der Regel schon nach kurzer Zeit
+                produktiv arbeiten kann. Meine Art ist recht offen und umgänglich und ich komme gut mit
+                anderen Personen in einem Team aus.
+            </p>
+        </section>
+        <section>
+            <h2>Einsatzgebiete</h2>
+            <ul class="chip-list">
+                <li>Backend</li>
+                <li>Frontend</li>
+                <li>mobile Anwendungen</li>
+                <li>VR-Anwendungen</li>
+                <li>Schulungen</li>
+                <li>Beratung</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Werkzeuge</h2>
+            <ul class="chip-list">
+                <li>IntelliJ IDEA</li>
+                <li>Figma</li>
+                <li>git</li>
+                <li>Unity3d</li>
+                <li>Blender</li>
+                <li>Affinity Photo</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Programmiersprachen / Frameworks</h2>
+            <ul class="chip-list">
+                <li>Java</li>
+                <li>AS3</li>
+                <li>C#</li>
+                <li>Rust</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>VUE</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>NodeJS</li>
+                <li>Express</li>
+                <li>Dart</li>
+                <li>Flutter</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Persönliche Interessen</h2>
+            <ul class="chip-list">
+                <li>Virtual Reality / 3d</li>
+                <li>Generative Art</li>
+                <li>Clean Code</li>
+                <li>UX / UI</li>
+                <li>Graph-Datenbanken</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Auszug aus der Liste der Endkunden</h2>
+            <ul class="customer-list">
+                <li>
+                    <a href="https://www.deutsche-bank.de/">
+                        <img src="assets/customers/deutschebank.svg" alt="Deutsche Bank AG">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.vr.de/">
+                        <img src="assets/customers/vr.svg" alt="Volksbanken Raiffeisenbanken">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.telekom.de/">
+                        <img src="assets/customers/deutschetelekom.svg" alt="Deutsche Telekom AG"
+                             style="padding: 15px;">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.t-systems.com/"><img src="assets/customers/tsystems.svg"
+                                                              alt="T-Systems GmbH" style="padding: 15px;"></a></li>
+                <li>
+                    <a href="https://www.ubs.com/"><img src="assets/customers/ubs.svg" alt="UBS Group AG"></a>
+                </li>
+                <li>
+                    <a href="https://fc.de/"><img src="assets/customers/fckoeln.svg" alt="1.FC Köln"></a>
+                </li>
+                <li>
+                    <a href="https://www.deutschepost.de/">
+                        <img src="assets/customers/deutschepost.svg" alt="Deutsche Post AG">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.nintendo.com/">
+                        <img src="assets/customers/nintendo.svg" alt="Nintendo Co., Ltd."
+                             style="background-color: rgb(230, 0, 18);">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.continental.com/">
+                        <img src="assets/customers/continental.svg" alt="Continental AG"
+                             style="background-color: #ffa500">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.sony.com/">
+                        <img src="assets/customers/sony.svg" alt="Sony">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.posterxxl.de/">
+                        <img src="assets/customers/posterxxl.svg" alt="posterXXL">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.dkv.com/">
+                        <img src="assets/customers/dkv.svg" alt="Deutsche Krankenversicherung AG">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://uefa.com/">
+                        <img src="assets/customers/uefa.svg" alt="UEFA">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.bod.de/">
+                        <img src="assets/customers/bod.svg" alt="Books on Demand">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.bauermedia.de/">
+                        <img src="assets/customers/bauer.svg" alt="Bauer Media Group">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.rtl.com/">
+                        <img src="assets/customers/rtl.svg" alt="RTL Television">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.maastrichtuniversity.nl/">
+                        <img src="assets/customers/maastrichtuniversity.svg" alt="Maastricht University">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.iventuregroup.com/">
+                        <img src="assets/customers/iventure.svg" alt="iVenture Group GmbH">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.idates.com/">
+                        <img src="assets/customers/idates.svg" alt="iDates">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.bzga.de/">
+                        <img src="assets/customers/bzga.svg"
+                             alt="Bundeszentrale für gesundheitliche Aufklärung">
+                    </a>
+                </li>
+                <li>
+                    <span class="stopper">offline</span>
+                    <img src="assets/customers/tapetv.svg" alt="tape.tv" style="background-color: black;">
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Hinweise für Vermittler und Interessenten</h2>
+            <p>
+                Der aktuelle Stundensatz für meine Tätigkeiten liegt bei EUR 95 (zzgl. MwSt.).
+                Anfragen für mittel- oder langfristige Projekte werden bevorzugt angenommen.
+                Bitte kein Anfragen für Projekte, in denen Subversion oder PHP eingesetzt wird!
+            </p>
+        </section>
+        <footer>
+            <a href="mailto:request@kai-langenbach.de">📧 request@kai-langenbach.de</a>
+            <a href="tel:+49-171-4995598">📱 (+49)171 /4 99 55 98</a>
+        </footer>
+    </div>
+</div>
+</body>
+</html>
