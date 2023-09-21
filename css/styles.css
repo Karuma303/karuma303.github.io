@@ -73,12 +73,11 @@ body {
     margin: 0;
     background-color: var(--background-color);
     line-height: 1.4;
-    color: black;
 }
 
 .bg {
     animation: slide 10s ease-in-out infinite alternate;
-    background-image: linear-gradient(-60deg, #85b5ab 50%, #6c9b9f 50%);
+    background-image: linear-gradient(-60deg, #005be5 45%, #00bbee 55%);
     bottom: 0;
     left: -50%;
     opacity: .5;
