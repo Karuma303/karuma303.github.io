@@ -14,3 +14,7 @@ People Interactive / Valtech ...
 ## Interests
 
 Describe which projects could be interesting for me.
+
+## Projects
+
+Some projects are still missing. berker - now hagener group (lbi), lightweight, abbot (IPad) 
