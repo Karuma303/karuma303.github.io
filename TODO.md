@@ -1,5 +1,9 @@
 # TODO
 
+## Separate hobby projects
+
+Make a separate section with hobby projects for wikiloops, fxhash
+
 ## Slideshow
 
 Integrate a slideshow with screenshots from reference websites / apps / whatever
